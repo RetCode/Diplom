@@ -17,3 +17,21 @@ body
     width: 1520px;
     margin: 0 auto;
 }
+
+.main-box
+{
+    margin-top: 191px;
+
+    display: flex;
+}
+
+.main-box .main-box-left-side
+{
+    margin-right: 191px;
+}
+
+.main-box .main-box-left-side .main-text-box .main-text
+{
+    font-size: 60px;
+    font-weight: 700;
+}
