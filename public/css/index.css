@@ -14,24 +14,81 @@ body
 
 .container
 {
-    width: 1520px;
+    width: 1320px;
     margin: 0 auto;
 }
 
 .main-box
 {
-    margin-top: 191px;
+    margin-top: 140px;
 
     display: flex;
 }
 
 .main-box .main-box-left-side
 {
-    margin-right: 191px;
+    margin-right: 80px;
+}
+
+.main-box .main-box-left-side .main-text-box
+{
+    margin-bottom: 31px;
 }
 
 .main-box .main-box-left-side .main-text-box .main-text
 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
+    white-space: break-spaces;
+}
+
+.main-box .main-box-left-side .additional-text-box
+{
+    margin-bottom: 81px;
+}
+
+.main-box .main-box-left-side .additional-text-box .additional-text
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: #787878;
+}
+
+.main-box .main-box-left-side .button-box .start-button
+{
+    width: 300px;
+    height: 70px;
+    border-radius: 12px;
+
+    background: #F97044;
+    border: transparent;
+
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.2s;
+}
+
+.main-box .main-box-left-side .button-box .start-button:hover
+{
+    transform: scale(0.95);
+    transition: 0.2s;
+}
+
+.main-box .main-box-right-side
+{
+    width: 100%;
+}
+
+.main-box .main-box-right-side .startup-img
+{
+    width: 100%;
 }

@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .nav-box
 {
     width: 100%;
@@ -10,6 +16,8 @@
 
     display: flex;
     align-items: center;
+
+    z-index: 2;
 }
 
 .nav-box .nav-container
