@@ -129,13 +129,15 @@ body::-webkit-scrollbar
 
     position: relative;
 
+    cursor: pointer;
+
     outline: none;
 }
 
 .main-box .search-filter-box .main-filter-box .main-filter-blocked
 {
-    background: #EFEFEF;
-    border: 1px solid #EFEFEF;
+    background: white;
+    border: 1px solid white;
     border-left: 1px solid #BDBDBD;
 
     color: #858585;
@@ -144,7 +146,7 @@ body::-webkit-scrollbar
 .main-box .search-filter-box .search-button-box button
 {
     width: 171px;
-    height: 33px;
+    height: 32px;
     border-radius: 5px;
 
     background-color: #F97044;
@@ -156,13 +158,13 @@ body::-webkit-scrollbar
     color: white;
 
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.2s ease all;
 }
 
 .main-box .search-filter-box .search-button-box button:hover
 {
     background-color: #FF4C24;
-    transition: 0.2s;
+    transition: 0.2s ease all;
 }
 
 .main-box .main-content
@@ -349,6 +351,8 @@ body::-webkit-scrollbar
     text-indent:-999px;
 
     overflow: hidden;
+
+    transition: 0.2s ease all;
 
     cursor: pointer;
 }
@@ -541,7 +545,7 @@ body::-webkit-scrollbar
 
 .favorite-button path 
 {
-    transition: 0.2s;
+    transition: 0.2s ease all;
 }
 
 .favorite-button.active path 
@@ -559,7 +563,7 @@ body::-webkit-scrollbar
 {
     position: relative;
 
-    margin-bottom: 5px;
+    padding-bottom: 5px;
 }
 
 .main-box .main-content .posting-advertisement-box .item-post .item .item-img-space img
@@ -701,7 +705,7 @@ body::-webkit-scrollbar
 .main-box .main-content .posting-advertisement-box .item-post .item .advertisement-detailed-info .advertisement-detailed-info-text p
 {
     font-weight: 400;
-    font-size: 11px;
+    font-size: 12px;
     white-space: break-spaces;
 }
 .main-box .main-content .posting-advertisement-box .item-post .item .advertisement-detailed-info .advertisement-info-city-time
