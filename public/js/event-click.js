@@ -1,4 +1,4 @@
-let favoriteButton = document.querySelector('.favorite-button')
+let favoriteButton = document.querySelector('.favorite-button');
 
 if (favoriteButton !== null) {
     document.querySelectorAll('.favorite-button').forEach(item => {

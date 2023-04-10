@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+*
+{
+    margin: 0;
+
+    font-family: 'Montserrat';
+
+    text-decoration: none;
+}
+
+body
+{
+    background: #F2EFEF;
+}
+
+body::-webkit-scrollbar
+{
+    display: none;
+}
+
+.container
+{
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.main-box
+{
+    margin-top: 150px;
+    margin-bottom: 70px;
+}
+
+.main-box .advertisement-block
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+
+    background: white;
+}
+
+.main-box .advertisement-block .advertisement-header
+{
+    padding-top: 33px;
+    padding-bottom: 33px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.main-box .advertisement-block .advertisement-header .advertisement_name-block
+{
+    margin-bottom: 26px;
+}
+
+.main-box .advertisement-block .advertisement-header .advertisement_name-block .advertisement-name
+{
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+}
+
+.main-box .advertisement-block .advertisement-header .advertisement_viewers_time-block
+{
+    display: flex;
+    align-items: center;
+}
+
+.main-box .advertisement-block .advertisement-header .advertisement_viewers_time-block svg
+{
+    margin-right: 7px;
+}
+
+.main-box .advertisement-block .advertisement-header .advertisement_viewers_time-block .advertisement_viewers-text
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: #F97044;
+
+    margin-right: 26px;
+}
+
+.main-box .advertisement-block .advertisement-header .advertisement_viewers_time-block .advertisement_time-text
+{
+    font-size: 16px;
+    font-weight: 400;
+    color: #A1A1A1;    
+}
+
+.main-box .advertisement-block .advertisement-header .advertisement_right-header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.main-box .advertisement-block .advertisement-header .advertisement_favorite-block
+{
+    margin-bottom: 26px;
+}
+
+.main-box .advertisement-block .advertisement-header .advertisement_favorite-block .favorite-button
+{
+    background: transparent;
+    border: transparent;
+
+    padding: 0;
+
+    cursor: pointer;
+}
+
+.favorite-button path
+{
+    transition: 0.2s ease all;
+}
+
+.favorite-button.active path
+{
+    fill: #F97044;
+}
+
+.main-box .advertisement-block .advertisement-header .advertisement_complaints-block .complaints-button
+{
+    background: transparent;
+    border: transparent;
+
+    font-size: 16px;
+    font-weight: 600;
+    color: #A1A1A1;
+
+    cursor: pointer;
+
+    transition: 0.2s ease all;
+}
+
+.main-box .advertisement-block .advertisement-header .advertisement_complaints-block .complaints-button:hover
+{
+    color: #F97044;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper
+{
+    display: flex;
+
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_image-block
+{
+    width: 65%;
+
+    margin-right: 20px;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_image-block .advertisement_main_image-block
+{
+    cursor: zoom-in;
+
+    background-image: url(no\ photo\ img.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    margin-bottom: 15px;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_image-block .advertisement_main_image-block img
+{
+    width: 100%;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_image-block .advertisement_scroll_image-block
+{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    overflow-x: scroll;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_image-block .advertisement_scroll_image-block::-webkit-scrollbar
+{
+    display: none;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_image-block .advertisement_scroll_image-block .image-item-block
+{
+    cursor: pointer;
+
+    margin-right: 10px;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_image-block .advertisement_scroll_image-block .image-item-block img
+{
+    width: 190px;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_important_description-block
+{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_important_description-block .advertisement_cost-block
+{
+    margin-bottom: 8px;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_important_description-block .advertisement_cost-block .main-cost
+{
+    font-size: 26px;
+    font-weight: 600;
+    color: black;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_important_description-block .advertisement_cost-block .secondary-cost
+{
+    font-size: 16px;
+    font-weight: 500;
+    color: #696969;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_important_description-block .advertisement__price_chart-button_block .advertisement__price_chart-button
+{
+    width: 140px;
+    height: 28px;
+    border-radius: 5px;
+
+    background: #F97044;
+    border: transparent;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.2s ease all;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_important_description-block .advertisement__price_chart-button_block .advertisement__price_chart-button:hover
+{
+    background-color: #FF5E2B;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_important_description-block .advertisement_about-block
+{
+    flex: 0.745;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_important_description-block .advertisement_detailed-info
+{
+    margin-top: 31px;
+    margin-bottom: 20px;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_important_description-block .advertisement_detailed-info p
+{
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    white-space: break-spaces;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_important_description-block .advertisement_exchange-block
+{
+    margin-bottom: 10px;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_important_description-block .advertisement_exchange-block .exchange-text
+{
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_important_description-block .advertisement__release_city-block .release_city-text
+{
+    font-size: 16px;
+    font-weight: 400;
+    color: #8d8d8d;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_important_description-block .advertisement_vin-block
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    margin-top: 85px;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_important_description-block .advertisement_vin-block .vin-check
+{
+    width: 60px;
+    height: 23px;
+    border-radius: 3px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 15px;
+
+    background: #0BB978;
+
+    pointer-events: none;
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_important_description-block .advertisement_vin-block .vin-check img
+{
+    margin-right: 6px;
+}
+
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_important_description-block .advertisement_vin-block .vin-check p
+{
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_important_description-block .advertisement_vin-block .vin_number-check
+{
+    width: 170px;
+    border-radius: 10px;
+
+    background: #0BB978;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_important_description-block .advertisement_vin-block .vin_number-check .vin_number-header
+{
+    display: flex;
+    justify-content: center;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid white;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_important_description-block .advertisement_vin-block .vin_number-check .vin_number-header p
+{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_important_description-block .advertisement_vin-block .vin_number-check .vin_number-text
+{
+    display: flex;
+    justify-content: center;
+
+    padding: 10px 0;
+
+    cursor: pointer;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_important_description-block .advertisement_vin-block .vin_number-check .vin_number-text p
+{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_important_description-block .show_phone-button_block
+{
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_important_description-block .show_phone-button_block .show_phone
+{
+    width: 100%;
+    height: 43px;
+    border-radius: 5px;
+
+    background: #F97044;
+    border: transparent;
+    filter: drop-shadow(5px 4px 8px rgba(0, 0, 0, 0.25));
+
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.2s ease all;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_general-wrapper .advertisement_important_description-block .show_phone-button_block .show_phone:hover
+{
+    background: #FF5E2B;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_description-wrapper
+{
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 70px;
+
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_description-wrapper .advertisement_description__name-block p
+{
+    font-size: 26px;
+    font-weight: 700;
+    color: black;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_description-wrapper .advertisement_description-block
+{
+    margin-top: 15px;
+    padding-right: 35%;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_description-wrapper .advertisement_description-block .description
+{
+    font-size: 20px;
+    font-weight: 400;
+    color: #7b7b7b;
+    white-space: break-spaces;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_detailed-wrapper
+{
+    margin-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    display: flex;
+    justify-content: space-between;
+}
