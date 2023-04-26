@@ -442,7 +442,25 @@ body::-webkit-scrollbar
     margin-top: 100px;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 100px;
 
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(0,300px));
+    gap: 20px;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_detailed-wrapper .heading_title
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.main-box .advertisement-block .advertisement-wrapper .advertisement_detailed-wrapper .heading_item
+{
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+
+    margin-top: 10px;
 }

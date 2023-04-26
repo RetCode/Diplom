@@ -501,11 +501,11 @@ body::-webkit-scrollbar
 {
     width: 100%;
 
-    margin-bottom: 25px;
     padding-right: 20px;
 
-    display: flex;
-    align-items: center;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit,minmax(0,310px));
 }
 
 .main-box .main-content .posting-advertisement-box .item-post .item
@@ -551,12 +551,6 @@ body::-webkit-scrollbar
 .favorite-button.active path 
 {
     fill: #F97044;
-}
-
-.main-box .main-content .posting-advertisement-box .item-post .item-center
-{
-    margin-left: 25px;
-    margin-right: 25px;
 }
 
 .main-box .main-content .posting-advertisement-box .item-post .item .item-img-space
