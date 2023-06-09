@@ -26,6 +26,12 @@
     margin: 0 auto;
 }
 
+.nav-box .nav-container .nav-column
+{
+    display: flex;
+    align-items: center;
+}
+
 .nav-box .nav-container .nav-column a
 {
     text-decoration: none;
@@ -47,6 +53,7 @@
 .nav-box .nav-container .nav-column ul
 {
     display: flex;
+    align-items: center;
 
     padding: 0;
 }
@@ -59,6 +66,11 @@
     margin-right: 55px;
 
     transition: 0.2s;
+}
+
+.nav-box .nav-container .nav-column ul a:last-child
+{
+    margin-right: 0;
 }
 
 .nav-box .nav-container .nav-column ul a:hover
@@ -87,6 +99,26 @@
     color: #F97044;
 
     transition: 0.2s;
+}
+
+.nav-box .nav-container .nav-column ul .new_ad-button
+{
+    border-radius: 10px;
+    
+    padding: 5px 10px;
+
+    color: white;
+
+    background: #F97044;
+
+    transition: 0.2s ease all;
+}
+
+.nav-box .nav-container .nav-column ul .new_ad-button:hover
+{
+    color: white;
+
+    background: #FF4C24;
 }
 
 .df

@@ -140,6 +140,8 @@ body::-webkit-scrollbar
     border: 1px solid white;
     border-left: 1px solid #BDBDBD;
 
+    cursor: default;
+
     color: #858585;
 }
 

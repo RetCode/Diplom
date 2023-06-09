@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+*
+{
+    margin: 0;
+
+    font-family: 'Montserrat';
+
+    text-decoration: none;
+}
+
+body
+{
+    background: #F2EFEF;
+}
+
+body::-webkit-scrollbar
+{
+    display: none;
+}
+
+.container
+{
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.main-box
+{
+    margin-top: 150px;
+    margin-bottom: 70px;
+}
+
+.main-box .new_ad-wrapper
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-box .new_ad-wrapper .ad_type-block
+{
+    width: 100%;
+
+    margin-right: 20px;
+}
+
+.main-box .new_ad-wrapper .ad_type-block .ad_type-title
+{
+    font-size: 24px;
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.main-box .new_ad-wrapper .ad_rule-block
+{
+    width: 355px;
+    height: 265px;
+    border-radius: 10px;
+
+    background: white;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.25);
+
+    padding: 30px 22px;
+}
+
+.main-box .new_ad-wrapper .ad_rule-block .ad_rule-header
+{
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+.main-box .new_ad-wrapper .ad_rule-block .ad_rule-header .ad_rule-title
+{
+    margin-right: 13px;
+}
+
+.main-box .new_ad-wrapper .ad_rule-block .ad_rule-header .ad_rule-title a
+{
+    font-size: 26px;
+    font-weight: 600;
+    color: black;
+
+    transition: 0.2s ease all;
+}
+
+.main-box .new_ad-wrapper .ad_rule-block .ad_rule-header .ad_rule-title a:hover
+{
+    color: #F97044;
+}
+
+.main-box .new_ad-wrapper .ad_rule-block .ad_rule-desc
+{
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+} 
+
+.main-box .new_ad-wrapper .ad_type-block .ad_type-wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-box .new_ad-wrapper .ad_type-block .ad_type-wrapper .ad_type-item
+{
+    width: 100%;
+    border-radius: 10px;
+
+    padding: 26px 21px;
+
+    background: white;
+    border: transparent;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.25);
+
+    cursor: pointer;
+}
+
+.main-box .new_ad-wrapper .ad_type-block .ad_type-wrapper .ad_type-item:first-child
+{
+    flex-basis: 100%;
+
+    margin-bottom: 20px;
+}
+
+.main-box .new_ad-wrapper .ad_type-block .ad_type-wrapper .ad_type-item:nth-child(2)
+{
+    flex-basis: 49%;
+}
+
+.main-box .new_ad-wrapper .ad_type-block .ad_type-wrapper .ad_type-item:nth-child(3)
+{
+    flex-basis: 50%;
+}
+
+.main-box .new_ad-wrapper .ad_type-block .ad_type-wrapper .ad_type-item .ad_type-item_header
+{
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.main-box .new_ad-wrapper .ad_type-block .ad_type-wrapper .ad_type-item .ad_type-item_header img
+{
+    margin-right: 20px;
+}
+
+.main-box .new_ad-wrapper .ad_type-block .ad_type-wrapper .ad_type-item .ad_type-item_header p
+{
+    font-size: 24px;
+    font-weight: 600;
+
+    transition: 0.2s ease all;
+}
+
+.main-box .new_ad-wrapper .ad_type-block .ad_type-wrapper .ad_type-item:hover .ad_type-item_header p
+{
+    color: #F97044;
+}
+
+.main-box .new_ad-wrapper .ad_type-block .ad_type-wrapper .ad_type-item .ad_type-item_desc
+{
+    text-align: start;
+    font-size: 20px;
+    font-weight: 400;
+}
