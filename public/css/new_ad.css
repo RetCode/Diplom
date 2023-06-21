@@ -112,6 +112,8 @@ body::-webkit-scrollbar
 
     padding: 26px 21px;
 
+    display: block;
+
     background: white;
     border: transparent;
     box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.25);
@@ -153,6 +155,7 @@ body::-webkit-scrollbar
 {
     font-size: 24px;
     font-weight: 600;
+    color: black;
 
     transition: 0.2s ease all;
 }
@@ -167,4 +170,5 @@ body::-webkit-scrollbar
     text-align: start;
     font-size: 20px;
     font-weight: 400;
+    color: black;
 }
