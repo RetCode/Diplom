@@ -944,3 +944,278 @@ body::-webkit-scrollbar
 {
     display: block !important;
 }
+
+/* modal */
+.reg_modal-wrapper
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 5;
+
+    width: 100%;
+    height: 100vh;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* login */
+.login_modal
+{
+    width: 390px;
+    border-radius: 5px;
+
+    padding: 35px;
+
+    display: none;
+    align-items: center;
+    flex-direction: column;
+
+    background: white;
+}
+
+.login_modal .login_modal-title
+{
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+
+    margin-bottom: 30px;
+}
+
+.login_modal .login_modal-wrapper
+{
+    width: 100%;
+}
+
+.login_modal .login_modal-wrapper .login_modal-item
+{
+    width: 100%;
+
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+
+    margin-bottom: 30px;
+}
+
+.login_modal .login_modal-wrapper .login_modal-item:nth-last-child(2)
+{
+    margin-bottom: 0;
+}
+
+.login_modal .login_modal-wrapper .login_modal-item input
+{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+
+    border: 1px solid black;
+
+    padding: 5px 10px;
+
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+.login_modal .login_modal-wrapper .button_block
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 10px;
+}
+
+.login_modal .login_modal-wrapper .button_block .reg_button
+{
+    background: transparent;
+    border: transparent;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: #6c6c6c;
+
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+.login_modal .login_modal-wrapper .button_block .reg_button:hover
+{
+    color: #BDBDBD;
+}
+
+.login_modal .login_modal-wrapper .button_block .log_button
+{
+    border-radius: 5px;
+
+    padding: 10px 40px;
+
+    background: transparent;
+    border: 1px solid black;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+
+    margin-top: 20px;
+
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+.login_modal .login_modal-wrapper .button_block .log_button:hover
+{
+    color: white;
+
+    background: #BDBDBD;
+    border: 1px solid #BDBDBD;
+}
+
+/* reg */
+.registr_modal
+{
+    width: 390px;
+    border-radius: 5px;
+
+    padding: 35px;
+
+    display: none;
+    align-items: center;
+    flex-direction: column;
+
+    background: white;
+}
+
+.registr_modal .registr_modal-title
+{
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+
+    margin-bottom: 30px;
+}
+
+.registr_modal .registr_modal-wrapper
+{
+    width: 100%;
+}
+
+.registr_modal .registr_modal-wrapper .registr_modal-item
+{
+    width: 100%;
+
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+
+    margin-bottom: 30px;
+}
+
+.registr_modal .registr_modal-wrapper .registr_modal-item:nth-last-child(2)
+{
+    margin-bottom: 0;
+}
+
+.registr_modal .registr_modal-wrapper .registr_modal-item input
+{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+
+    border: 1px solid black;
+
+    padding: 5px 10px;
+
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+.registr_modal .registr_modal-wrapper .button_block
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 10px;
+}
+
+.registr_modal .registr_modal-wrapper .button_block .reg_button
+{
+    background: transparent;
+    border: transparent;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: #6c6c6c;
+
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+.registr_modal .registr_modal-wrapper .button_block .reg_button:hover
+{
+    color: #BDBDBD;
+}
+
+.registr_modal .registr_modal-wrapper .button_block .back_button
+{
+    background: transparent;
+    border: transparent;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: #6c6c6c;
+
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+.registr_modal .registr_modal-wrapper .button_block .back_button:hover
+{
+    color: #BDBDBD;
+}
+
+.registr_modal .registr_modal-wrapper .button_block .log_button
+{
+    border-radius: 5px;
+
+    padding: 10px 20px;
+
+    background: transparent;
+    border: 1px solid black;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+
+    margin-top: 20px;
+
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+.registr_modal .registr_modal-wrapper .button_block .log_button:hover
+{
+    color: white;
+
+    background: #BDBDBD;
+    border: 1px solid #BDBDBD;
+}
+
+.modal_active
+{
+    display: flex;
+}
+
+.open
+{
+    display: flex
+}

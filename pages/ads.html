@@ -9,6 +9,52 @@
     <title>Auto Drive | Ads Page</title>
 </head>
 <body>
+    <!-- Modal Start -->
+    <div class="reg_modal-wrapper">
+        <div class="login_modal modal_active">
+            <div class="close_button-block">
+                <button class="close_button">X</button>
+            </div>
+            <div class="login_modal-title">
+                <p>Вход</p>
+            </div>
+            <div class="login_modal-wrapper">
+                <div class="login_modal-item">
+                    <p>Логин</p>
+                    <input type="text">
+                </div>
+                <div class="login_modal-item">
+                    <p>Пароль</p>
+                    <input type="password">
+                </div>
+                <div class="button_block">
+                    <button class="reg_button">Регистрация</button>
+                    <button class="log_button">Войти</button>
+                </div>
+            </div>
+        </div>
+        <div class="registr_modal">
+            <div class="registr_modal-title">
+                <p>Регистрация</p>
+            </div>
+            <div class="registr_modal-wrapper">
+                <div class="registr_modal-item">
+                    <p>Логин</p>
+                    <input type="text">
+                </div>
+                <div class="registr_modal-item">
+                    <p>Пароль</p>
+                    <input type="password">
+                </div>
+                <div class="button_block">
+                    <button class="back_button">Назад</button>
+                    <button class="log_button">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal End -->
+
     <!-- Nav Start -->
     <nav class="nav-box">
         <div class="nav-container df">
@@ -22,7 +68,7 @@
                 </ul>
             </div>
             <div class="nav-column">
-                <button>Вход</button>
+                <button class="login_button">Вход</button>
             </div>
         </div>
     </nav>
@@ -374,5 +420,6 @@
         <!-- Main End -->
     </div>
     <script src="../public/js/event-click.js"></script>
+    <script src="../public/js/open_modal.js"></script>
 </body>
 </html>
