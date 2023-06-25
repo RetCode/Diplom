@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+*
+{
+    margin: 0;
+
+    font-family: 'Montserrat';
+
+    text-decoration: none;
+}
+
+body
+{
+    background: #F2EFEF;
+}
+
+body::-webkit-scrollbar
+{
+    display: none;
+}
+
+.container
+{
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.main-box
+{
+    margin-top: 140px;
+    margin-bottom: 10vh;
+
+    display: flex;
+    align-items: flex-start;
+}
+
+.data-block
+{
+    min-width: 250px;
+    border-radius: 10px;
+
+    background: white;
+    box-shadow: 5px 4px 8px 0px rgba(0, 0, 0, 0.25);
+
+    padding: 20px;
+    margin-right: 30px;
+}
+
+.data-block .data_title-block
+{
+    margin-bottom: 40px;
+}
+
+.data-block .data_title-block .title
+{
+    font-size: 16px;
+    font-weight: 500;
+    color: #828282;
+}
+
+.data-block .data_title-block .name
+{
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+
+    margin-bottom: 3px;
+}
+
+.data-block .data_title-block .number
+{
+    font-size: 16px;
+    font-weight: 500;
+    color: #F97044;
+}
+
+.data-block .button-block
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.data-block .button-block button
+{
+    font-size: 21px;
+    font-weight: 600;
+    color: #F97044;
+
+    background: transparent;
+    border: transparent;
+
+    margin-bottom: 11px;
+    padding: 0;
+
+    cursor: pointer;
+    transition: 0.2s ease all
+}
+
+.data-block .button-block button:hover
+{
+    color: #FF4C24;
+}
+
+.data-block .button-block button:last-child
+{
+    margin-bottom: 0;
+}
+
+.data-block .button-block button:nth-last-child(2)
+{
+    margin-bottom: 280px;
+}
+
+/* user ads */
+.user_ads-block
+{
+    width: 100%;
+
+    display: none;
+}
+
+.user_ads-block .title
+{
+    font-size: 28px;
+    font-weight: 700;
+    color: black;
+
+    margin-bottom: 20px;
+}
+
+.user_ads-block .wrapper .user_ad-item
+{
+    width: 100%;
+    border-radius: 10px;
+
+    padding: 20px 14px;
+    margin-bottom: 20px;
+
+    background: white;
+    box-shadow: 5px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.user_ads-block .wrapper .user_ad-item:last-child
+{
+    margin-bottom: 0;
+}
+
+.user_ads-block .wrapper .ad_name
+{
+    font-size: 28px;
+    font-weight: 600;
+    color: #F97044;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.user_ads-block .wrapper .ad_name button
+{
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+
+    background: #F97044;
+    border: transparent;
+    box-shadow: 5px 4px 8px 0px rgba(0, 0, 0, 0.25);
+
+    border-radius: 10px;
+
+    padding: 7px 23px;
+
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+.user_ads-block .wrapper .ad_name button:hover
+{
+    background: #FF4C24;
+}
+
+.user_ads-block .wrapper .ad_status
+{
+    margin-bottom: 20px;
+}
+
+.user_ads-block .wrapper .ad_status .not_published
+{
+    font-size: 11px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+
+    width: 280px;
+    border-radius: 15px;
+
+    padding: 2px 55px;
+
+    display: none;
+
+    background: #FF003D;
+}
+
+.user_ads-block .wrapper .ad_status .moderation
+{
+    font-size: 11px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+
+    width: 280px;
+    border-radius: 15px;
+
+    padding: 2px 55px;
+
+    display: none;
+
+    background: #FBC12B;
+}
+
+.user_ads-block .wrapper .ad_status .published
+{
+    font-size: 11px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+
+    width: 280px;
+    border-radius: 15px;
+
+    padding: 2px 55px;
+
+    display: none;
+
+    background: #0BB978;
+}
+
+.user_ads-block .wrapper .ad_body
+{
+    display: flex;
+
+    padding-bottom: 80px;
+}
+
+.user_ads-block .wrapper .ad_body .img-block
+{
+    margin-right: 20px;
+}
+
+.user_ads-block .wrapper .ad_body .img-block img
+{
+    width: 450px;
+    height: 100%;
+}
+
+.user_ads-block .wrapper .ad_body .ad_desc
+{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user_ads-block .wrapper .ad_body .ad_desc .desc_body .ad_info
+{
+    margin-bottom: 10px;
+}
+
+.user_ads-block .wrapper .ad_body .ad_desc .desc_body .ad_info:last-child
+{
+    margin-bottom: 0;
+}
+
+.user_ads-block .wrapper .ad_body .ad_desc .desc_body .ad_info .title_block
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user_ads-block .wrapper .ad_body .desc_body .ad_info .title_block .title
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+
+    margin: 0;
+}
+
+.user_ads-block .wrapper .ad_body .desc_body .ad_info .title_block .title span
+{
+    font-size: 13px;
+    font-weight: 500;
+    color: #696969;
+}
+
+.user_ads-block .wrapper .ad_body .desc_body .ad_info .title_block .publishing_title
+{
+    text-align: end;
+    font-size: 13px;
+    font-weight: 400;
+    color: #696969;
+}
+
+.user_ads-block .wrapper .ad_body .desc_body .ad_info .detailed_info
+{
+    width: 150px;
+
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+
+    margin-bottom: 10px;
+}
+
+.user_ads-block .wrapper .ad_body .desc_body .ad_info .ad_geo
+{
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+}
+
+.user_ads-block .wrapper .ad_body .ad_desc .stat_body .title
+{
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+
+    margin-bottom: 10px;
+}
+
+.user_ads-block .wrapper .ad_body .ad_desc .stat_body .stat_items
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user_ads-block .wrapper .ad_body .ad_desc .stat_body .stat_items .item
+{
+    font-size: 13px;
+    font-weight: 400;
+    color: black;
+}
+
+.user_ads-block .wrapper .ad_body .ad_desc .stat_body .stat_items .item p:first-child
+{
+    font-size: 18px;
+}
+
+.user_ads-block .wrapper .ad_body .ad_desc .stat_body .stat_items .item:last-child
+{
+    border-right: transparent;
+    
+    margin: 0;
+}
+/* user ads */
+
+/* favorite ads */
+.favotive_ads
+{
+    width: 100%;
+
+    display: none;
+}
+
+.favotive_ads .title
+{
+    font-size: 28px;
+    font-weight: 700;
+    color: black;
+
+    margin-bottom: 20px;
+}
+
+.favotive_ads .wrapper .favorite_ad-item
+{
+    width: 100%;
+    border-radius: 10px;
+
+    padding: 20px 14px;
+    margin-bottom: 20px;
+
+    display: flex;
+
+    background: white;
+    box-shadow: 5px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.favotive_ads .wrapper .favorite_ad-item:last-child
+{
+    margin-bottom: 0;
+}
+
+.favotive_ads .wrapper .img_block
+{
+    margin-right: 10px;
+}
+
+.favotive_ads .wrapper .img_block img
+{
+    width: 325px;
+}
+
+.favotive_ads .wrapper .favotive_ad-info_body
+{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.favotive_ads .wrapper .favotive_ad-info_body .title_city-block
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 270px;
+    height: 100%;
+}
+
+.favotive_ads .wrapper .favotive_ad-info_body .title_city-block .title a
+{
+    font-size: 24px;
+    font-weight: 600;
+    color: #F97044;
+
+    transition: 0.2s ease all;
+}
+
+.favotive_ads .wrapper .favotive_ad-info_body .title_city-block .title a:hover
+{
+    color: #FF4C24;
+}
+
+.favotive_ads .wrapper .favotive_ad-info_body .title_city-block .city_block
+{
+    display: flex;
+    align-items: center;
+}
+
+.favotive_ads .wrapper .favotive_ad-info_body .title_city-block .city_block .city
+{
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+
+    margin-right: 10px;
+}
+
+.favotive_ads .wrapper .favotive_ad-info_body .title_city-block .city_block .publishing_time
+{
+    font-size: 13px;
+    font-weight: 400;
+    color: #696969;
+}
+
+.favotive_ads .wrapper .favotive_ad-info_body .ad_info
+{
+    width: 170px;
+}
+
+.favotive_ads .wrapper .favotive_ad-info_body .ad_info .detailed_info
+{
+    width: 150px;
+
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+
+    margin-bottom: 10px;
+}
+
+.favotive_ads .wrapper .favotive_ad-info_body .price_block
+{
+    width: 101px;
+
+    word-break:break-all;
+}
+
+.favotive_ads .wrapper .favotive_ad-info_body .price_block p
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+
+    line-height: 20px;
+}
+
+.favotive_ads .wrapper .favotive_ad-info_body .price_block span
+{
+    font-size: 13px;
+    font-weight: 500;
+    color: #696969;
+}
+
+.favotive_ads .wrapper .favotive_ad-info_body .button_block button
+{
+    padding: 0;
+
+    border: transparent;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.favotive_ads .wrapper .favotive_ad-info_body .button_block button path
+{
+    transition: 0.2s ease all;
+}
+
+.favotive_ads .wrapper .favotive_ad-info_body .button_block button:hover path
+{
+    fill: #828282;
+}
+/* favorite ads */
+.active
+{
+    display: block !important;
+}
