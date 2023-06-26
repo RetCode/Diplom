@@ -6,7 +6,7 @@
     $password = $_POST["password"];
 
     // Поиск пользователя в базе данных
-    $sql = "SELECT id, name, pass FROM user WHERE name = '$name'";
+    $sql = "SELECT * FROM user WHERE name = '$name'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
@@ -17,10 +17,11 @@
         if (password_verify($password, $hashed_password)) {
             // Успешная аутентификация
             session_start();
-            
+
             $_SESSION["auth"] = true;
             $_SESSION["user_id"] = $row["id"];
             $_SESSION["username"] = $row["name"];
+            $_SESSION["phone"] = $row["phone"];
 
             echo true;
         } else {

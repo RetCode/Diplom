@@ -104,16 +104,16 @@
                         <p>Ваши данные</p>
                     </div>
                     <div class="name">
-                        name
+                        <?php echo $_SESSION["username"] ?>
                     </div>
                     <div class="number">
-                        +375 29 123 45 67
+                        <?php echo $_SESSION["phone"] ?>
                     </div>
                 </div>
                 <div class="button-block">
                     <button class="user_button">Мои объявления</button>
                     <button class="favorite_button">Избранное</button>
-                    <button>Выйти</button>
+                    <a href="leave.php">Выйти</a>
                 </div>
             </div>
             <div class="user_ads-block active">
@@ -140,36 +140,12 @@
                                     <div class="ad_info">
                                         <div class="title_block">
                                             <p class="title">22 240р. <span>≈ 8000$</span></p>
-                                            <p class="publishing_title">Опубликовано минуту назад</p>
                                         </div>
                                     </div>
                                     <div class="ad_info">
                                         <p class="detailed_info">2001 г., автомат, 4.4 бензин, кроссовер</p>
                                         <p class="detailed_info">500 000км</p>
                                         <p class="ad_geo">Гродно</p>
-                                    </div>
-                                </div>
-                                <div class="stat_body">
-                                    <div class="title">
-                                        <p>Статистика за всё время</p>
-                                    </div>
-                                    <div class="stat_items">
-                                        <div class="item">
-                                            <p>0</p>
-                                            <p>просмотров<br> объявлений</p>
-                                        </div>
-                                        <div class="item">
-                                            <p>0</p>
-                                            <p>просмотров<br> телефона</p>
-                                        </div>
-                                        <div class="item">
-                                            <p>0</p>
-                                            <p>пользователей<br> добавили в избранное</p>
-                                        </div>
-                                        <div class="item">
-                                            <p>1</p>
-                                            <p>день в<br>продаже</p>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -190,14 +166,6 @@
                             <div class="title_city-block">
                                 <div class="title">
                                     <a href="">BMW M5CS</a>
-                                </div>
-                                <div class="city_block">
-                                    <div class="city">
-                                        <p>Минск</p>
-                                    </div>
-                                    <div class="publishing_time">
-                                        <p>Опубликовано 28 мая</p>
-                                    </div>
                                 </div>
                             </div>
                             <div class="ad_info">

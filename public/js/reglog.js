@@ -33,7 +33,7 @@ $("#log-btn").on("click", () => {
         success: function(response) {
             if(response == true)
             {
-                alert("Вошли");
+                location.reload();
             }
             else
             {

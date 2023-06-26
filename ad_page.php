@@ -1,5 +1,14 @@
 <?php
+
+    require_once("db.php");
+
     session_start();
+
+    $id = $_GET["id"];
+    $sql = "SELECT * FROM ads_table WHERE id = $id";
+    $result = $conn->query($sql);
+    $data = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    var_dump($data);
 ?>
 
 <!DOCTYPE html>
@@ -105,13 +114,6 @@
                         <div class="advertisement_name-block">
                             <p class="advertisement-name">Продажа BMW X5 E53, 2001г. в Лиде</p>
                         </div>
-                        <div class="advertisement_viewers_time-block">
-                            <svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.9927 5.60001C10.2288 5.60001 9.57461 5.32561 9.03014 4.77681C8.48568 4.22801 8.21391 3.56908 8.21484 2.80001C8.21484 2.03001 8.48707 1.37062 9.03153 0.821816C9.576 0.273016 10.2297 -0.000916862 10.9927 1.64706e-05C11.7566 1.64706e-05 12.4108 0.274416 12.9553 0.823216C13.4997 1.37202 13.7715 2.03095 13.7706 2.80001C13.7706 3.57001 13.4983 4.22941 12.9539 4.77821C12.4094 5.32701 11.7557 5.60095 10.9927 5.60001ZM8.21484 28C7.82131 28 7.49121 27.8656 7.22453 27.5968C6.95786 27.328 6.82498 26.9957 6.82591 26.6V9.48501C4.974 8.99501 3.45173 8.02108 2.2591 6.56321C1.06647 5.10535 0.320146 3.44215 0.020136 1.57362C-0.0493107 1.15362 0.0608779 0.785882 0.350702 0.470416C0.640526 0.15495 1.01646 -0.00185019 1.47852 1.64706e-05C1.8026 1.64706e-05 2.08641 0.116683 2.32993 0.350016C2.57346 0.583349 2.71791 0.863349 2.76328 1.19002C3.01792 2.84668 3.73553 4.22941 4.91613 5.33821C6.09672 6.44701 7.54352 7.00094 9.25654 7.00001H12.7289C13.4233 7.00001 14.0715 7.12834 14.6734 7.38501C15.2753 7.64168 15.8192 8.01501 16.3054 8.50501L21.618 13.86C21.8727 14.1167 22 14.4433 22 14.84C22 15.2367 21.8727 15.5633 21.618 15.82C21.3634 16.0767 21.0393 16.205 20.6458 16.205C20.2523 16.205 19.9282 16.0767 19.6735 15.82L15.1595 11.27V26.6C15.1595 26.9967 15.0262 27.3294 14.7595 27.5982C14.4928 27.867 14.1632 28.0009 13.7706 28C13.377 28 13.0469 27.8656 12.7803 27.5968C12.5136 27.328 12.3807 26.9957 12.3816 26.6V19.6H9.60377V26.6C9.60377 26.9967 9.47044 27.3294 9.20376 27.5982C8.93709 27.867 8.60745 28.0009 8.21484 28Z" fill="#F97044"/>
-                            </svg>
-                            <p class="advertisement_viewers-text">6</p>
-                            <p class="advertisement_time-text">появилась в продаже 5 минут назад</p>
-                        </div>
                     </div>
                     <div class="advertisement_right-header">
                         <div class="advertisement_favorite-block">
@@ -120,9 +122,6 @@
                                     <path d="M0 2.089V24.001L6.546 17.741L13.091 24.001V2.089C13.0855 1.53321 12.8609 1.00206 12.466 0.610913C12.0711 0.21977 11.5378 0.000235894 10.982 2.59533e-09L10.905 0.001H10.909H2.183L2.11 2.59533e-09C1.55428 -2.75475e-05 1.021 0.219285 0.626088 0.610269C0.231172 1.00125 0.0065335 1.53231 0.001 2.088L0 2.089Z" fill="#C8C8C8"/>
                                 </svg>   
                             </button>                                                         
-                        </div>
-                        <div class="advertisement_complaints-block">
-                            <a href="#" class="complaints-button">Пожаловаться на объявление</a>
                         </div>
                     </div>
                 </div>
@@ -135,7 +134,7 @@
                             <div class="advertisement_main_image-block">
                                 <img src="../public/img/advertisemt-img/image 389.png">
                             </div>
-                            <div class="advertisement_scroll_image-block">
+                            <!-- <div class="advertisement_scroll_image-block">
                                 <div class="image-item-block">
                                     <img src="../public/img/advertisemt-img/image 389.png">
                                 </div>
@@ -151,16 +150,16 @@
                                 <div class="image-item-block">
                                     <img src="../public/img/advertisemt-img/image 389.png">
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="advertisement_important_description-block">
                             <div class="advertisement_cost-block">
                                 <p class="main-cost">22 240р.</p>
                                 <p class="secondary-cost">8 000$</p>
                             </div>
-                            <div class="advertisement__price_chart-button_block">
+                            <!-- <div class="advertisement__price_chart-button_block">
                                 <button class="advertisement__price_chart-button">График цен</button>
-                            </div>
+                            </div> -->
                             <div class="advertisement_about-block">
                                 <div class="advertisement_detailed-info">
                                     <p>2001 г., автомат 4.4 бензин, 500 000 км, кроссовер, постоянный полный привод, чёрный</p>
@@ -171,7 +170,7 @@
                                 <div class="advertisement__release_city-block">
                                     <p class="release_city-text">Гродненская обл. Лида</p>
                                 </div>
-                                <div class="advertisement_vin-block">
+                                <div class="advertisement_vin-block" style="margin-top: 25px;">
                                     <div class="vin-check">
                                         <img src="../public/img/check mark.svg">
                                         <p>VIN</p>
@@ -186,7 +185,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="show_phone-button_block">
+                            <div class="show_phone-button_block" style="margin-top: 15px;">
                                 <button onclick="showPhone()" id="show_phone" class="show_phone">Показать телефон</button> 
                                 <!-- <input onclick="showPhone()" id="show_phone" class="show_phone" type="button" value="Показать телефон"> -->
                             </div>                            
@@ -333,7 +332,7 @@
         <div></div>
         <!-- Modals End -->
     </div>
-    <script src="../public/js/event-click.js"></script>
-    <script src="../public/js/open_modal.js"></script>
+    <script src="public/js/event-click.js"></script>
+    <script src="public/js/open_modal.js"></script>
 </body>
 </html>
