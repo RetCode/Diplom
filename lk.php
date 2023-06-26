@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,9 +77,21 @@
                     <a href="new_ad.php" class="new_ad-button">Выложить объявление</a>
                 </ul>
             </div>
-            <div class="nav-column">
-                <button class="login_button">Вход</button>
-            </div>
+            <?php
+
+                if(isset($_SESSION["auth"]))
+                {
+                    echo '<div class="nav-column">
+                        <a href="lk.php">'.$_SESSION["username"].'</a>
+                    </div>';
+                }
+                else
+                {
+                    echo '<div class="nav-column">
+                        <button class="login_button">Вход</button>
+                    </div>';
+                }
+            ?>
         </div>
     </nav>
     <!-- Nav End -->
