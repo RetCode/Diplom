@@ -21,15 +21,18 @@
             <div class="login_modal-wrapper">
                 <div class="login_modal-item">
                     <p>Логин</p>
-                    <input type="text">
+                    <input type="text" id="login-log">
                 </div>
                 <div class="login_modal-item">
                     <p>Пароль</p>
-                    <input type="password">
+                    <input type="password" id="password-log">
+                </div>
+                <div class="warning-box-log">
+                    
                 </div>
                 <div class="button_block">
                     <button class="reg_button">Регистрация</button>
-                    <button class="log_button">Войти</button>
+                    <button class="log_button" id="log-btn">Войти</button>
                 </div>
             </div>
         </div>
@@ -40,15 +43,18 @@
             <div class="registr_modal-wrapper">
                 <div class="registr_modal-item">
                     <p>Логин</p>
-                    <input type="text">
+                    <input type="text" id="reg-login">
                 </div>
                 <div class="registr_modal-item">
                     <p>Пароль</p>
-                    <input type="password">
+                    <input type="password" id="reg-password">
+                </div>
+                <div class="warning-box-reg">
+                    
                 </div>
                 <div class="button_block">
                     <button class="back_button">Назад</button>
-                    <button class="log_button">Зарегистрироваться</button>
+                    <button class="log_button" id="reg-btn">Зарегистрироваться</button>
                 </div>
             </div>
         </div>
@@ -59,12 +65,12 @@
     <nav class="nav-box">
         <div class="nav-container df">
             <div class="nav-column">
-                <a href="ads.html"><p class="logo">Auto <span>Drive</span></p></a>
+                <a href="ads.php"><p class="logo">Auto <span>Drive</span></p></a>
             </div>
             <div class="nav-column">
                 <ul>
                     <a href="#">Связь с нами</a>
-                    <a href="new_ad.html" class="new_ad-button">Выложить объявление</a>
+                    <a href="new_ad.php" class="new_ad-button">Выложить объявление</a>
                 </ul>
             </div>
             <div class="nav-column">

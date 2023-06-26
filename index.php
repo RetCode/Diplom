@@ -21,15 +21,18 @@
             <div class="login_modal-wrapper">
                 <div class="login_modal-item">
                     <p>Логин</p>
-                    <input type="text">
+                    <input type="text" id="login-log">
                 </div>
                 <div class="login_modal-item">
                     <p>Пароль</p>
-                    <input type="password">
+                    <input type="password" id="password-log">
+                </div>
+                <div class="warning-box-log">
+                    
                 </div>
                 <div class="button_block">
                     <button class="reg_button">Регистрация</button>
-                    <button class="log_button">Войти</button>
+                    <button class="log_button" id="log-btn">Войти</button>
                 </div>
             </div>
         </div>
@@ -40,15 +43,18 @@
             <div class="registr_modal-wrapper">
                 <div class="registr_modal-item">
                     <p>Логин</p>
-                    <input type="text">
+                    <input type="text" id="reg-login">
                 </div>
                 <div class="registr_modal-item">
                     <p>Пароль</p>
-                    <input type="password">
+                    <input type="password" id="reg-password">
+                </div>
+                <div class="warning-box-reg">
+                    
                 </div>
                 <div class="button_block">
                     <button class="back_button">Назад</button>
-                    <button class="log_button">Зарегистрироваться</button>
+                    <button class="log_button" id="reg-btn">Зарегистрироваться</button>
                 </div>
             </div>
         </div>
@@ -64,7 +70,7 @@
             <div class="nav-column">
                 <ul>
                     <a href="#">Связь с нами</a>
-                    <a href="new_ad.html" class="new_ad-button">Выложить объявление</a>
+                    <a href="new_ad.php" class="new_ad-button">Выложить объявление</a>
                 </ul>
             </div>
             <div class="nav-column">
@@ -84,7 +90,7 @@
                     <p class="additional-text">Путь к вашему автомобилю<br> начинается здесь</p>
                 </div>
                 <div class="button-box">
-                    <a href="ads.html" class="start-button">Попробовать</a>
+                    <a href="ads.php" class="start-button">Попробовать</a>
                 </div>
             </div>
             <div class="main-box-right-side">
@@ -93,6 +99,8 @@
         </main>
         <!-- Main End -->
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../public/js/open_modal.js"></script>
+    <script src="public/js/reglog.js"></script>
 </body>
 </html>

@@ -64,7 +64,7 @@
             <div class="nav-column">
                 <ul>
                     <a href="#">Связь с нами</a>
-                    <a href="new_ad.html" class="new_ad-button">Выложить объявление</a>
+                    <a href="new_ad.php" class="new_ad-button">Выложить объявление</a>
                 </ul>
             </div>
             <div class="nav-column">
@@ -282,7 +282,7 @@
 
                     <div class="item-post">
                         <div class="item">
-                            <a class="open-advertisement" href="ad_page.html">
+                            <a class="open-advertisement" href="ad_page.php">
                                 <div class="item-img-space">
                                     <img src="../public/img/advertisemt-img/image 389.png">
                                     <div class="vip-type-advertisement">
@@ -297,7 +297,7 @@
                             <div class="advertisement-info">
                                 <div class="advertisement-general-info">
                                     <div class="name">
-                                        <a class="open-advertisement" href="ad_page.html"><p>BMW X5 E53</p></a>
+                                        <a class="open-advertisement" href="ad_page.php"><p>BMW X5 E53</p></a>
                                     </div>
                                     <div class="advertisement-cost">
                                         <p class="byn-cost">22 240р.</p>
